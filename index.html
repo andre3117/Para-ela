@@ -1,0 +1,102 @@
+index.html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para Meu Amor ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Dancing Script', cursive;
+      background: linear-gradient(to bottom, #ffe6e6, #fff);
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-top: 40px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .timeline {
+      margin-top: 50px;
+    }
+
+    .event {
+      margin: 20px auto;
+      padding: 15px;
+      max-width: 600px;
+      background-color: #fff0f0;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .letter {
+      margin-top: 50px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff9999;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.4rem;
+      background-color: #fff0f0;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    audio {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Para o Amor da Minha Vida ❤️</h1>
+
+  <div class="timeline">
+    <div class="event">
+      <h2>💖 "Amar é encontrar na felicidade do outro a própria felicidade."</h2>
+    </div>
+    <div class="event">
+      <h2>💘 "Você é a razão do meu sorriso mais sincero e do meu pensamento mais bonito."</h2>
+    </div>
+    <div class="event">
+      <h2>💞 "Se eu tivesse que escolher entre respirar e te amar, usaria meu último suspiro para dizer: eu te amo."</h2>
+    </div>
+  </div>
+
+  <div class="letter">
+    <button onclick="revelarCarta()">Clique para ler uma carta</button>
+    <div class="hidden" id="carta">
+      Meu amor,<br><br>
+      Você é a melhor parte de mim. Cada dia ao seu lado é uma maravilha, e eu faria de tudo, so pra ter vc ao meu lado pra sempre em tao pouco tempo eu passei a te amar muito, nao sei como, mas tenho que agradecer vc por estar do meu lado nos momneots que eu mais precisava.<br><br>
+      Te amo pra sempre ❤️
+    </div>
+  </div>
+
+  <script>
+    function revelarCarta() {
+      document.getElementById('carta').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
